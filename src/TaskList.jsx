@@ -65,10 +65,10 @@ function TaskList() {
       <div className="row justify-content-center w-100">
         <div className="col-12 col-sm-10 col-md-8 col-lg-5">
           <div className="card p-4"  style={{
-    backgroundColor: "rgba(0,0,0,0.6)", // gris oscuro semi-transparente
-    color: "white",                     // texto visible sobre fondo oscuro
+    backgroundColor: "rgba(0,0,0,0.6)", 
+    color: "white",                     
     borderRadius: "10px",
-    backdropFilter: "blur(5px)",       // efecto blur opcional
+    backdropFilter: "blur(5px)",       
   }}>
         <h1 className=" customTittle text-center mb-4 fw-bold text-white">
           TASK LIST
@@ -114,8 +114,9 @@ function TaskList() {
         </ul>
           {/* Cuando haya elementos en la lista se muestra el boton*/}
         {tasks.length > 0 && (
-          <button className="btn btn-warning w-100" onClick={handleDeleteAll}>
-            Limpiar todo
+          <button className="btn btn-primary w-100" onClick={handleDeleteAll}>
+            Eliminar tareas
+            
           </button>
         )}
         </div>

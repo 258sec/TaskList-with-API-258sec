@@ -7,13 +7,14 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: `url("/fondo.jpeg")`, // desde /public
-        backgroundSize: "cover",       // cubre toda la pantalla
-        backgroundPosition: "center",  // centrada
-        backgroundRepeat: "no-repeat", // no se repite
-        height: "100vh",               // altura de la ventana
+        backgroundImage: `url("/fondo.jpeg")`, 
+        
+        backgroundSize: "cover",      
+        backgroundPosition: "center",  
+        backgroundRepeat: "no-repeat", 
+        height: "100vh",             
         width: "100%",
-        display: "flex",               // para centrar contenido
+        display: "flex",               
         justifyContent: "center",
         alignItems: "center",
       }}

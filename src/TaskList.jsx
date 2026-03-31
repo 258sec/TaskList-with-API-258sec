@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import api from "./api.jsx";
 
+
 function TaskList() {
   const [tasks, setTasks] = useState([]);
   const [inputValue, setInputValue] = useState("");
@@ -60,13 +61,18 @@ function TaskList() {
   };
       //Interfaz grafica
   return (
-   <div className="container vh-100 d-flex align-items-center">
+   <div className="container-fluid vh-100 d-flex align-items-center ">
       <div className="row justify-content-center w-100">
         <div className="col-12 col-sm-10 col-md-8 col-lg-5">
-          <div className="card p-4">
-        <h2 className="text-center mb-4 text-primary">
-          TODO LIST
-        </h2>
+          <div className="card p-4"  style={{
+    backgroundColor: "rgba(0,0,0,0.6)", // gris oscuro semi-transparente
+    color: "white",                     // texto visible sobre fondo oscuro
+    borderRadius: "10px",
+    backdropFilter: "blur(5px)",       // efecto blur opcional
+  }}>
+        <h1 className=" customTittle text-center mb-4 fw-bold text-white">
+          TASK LIST
+        </h1>
 
         {error && <p className="text-danger">{error}</p>}
 

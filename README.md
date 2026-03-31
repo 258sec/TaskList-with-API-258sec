@@ -1,16 +1,73 @@
-# React + Vite
+# TaskList with API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de lista de tareas desarrollada con **React + Vite** que permite crear, visualizar y eliminar tareas usando una API externa. Usa hooks como `useState` y `useEffect` para gestionar estado y peticiones, y Bootstrap para diseño responsivo. :contentReference[oaicite:0]{index=0}
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Demostración
 
-## React Compiler
+Una simple TODO List donde puedes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📝 Añadir tareas
+- ❌ Eliminar tareas individuales
+- 🧹 Limpiar todas las tareas
+- ⚡ Interactuar con una API real
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tecnologías
+
+- React (Hooks)
+- Vite
+- Bootstrap
+- Fetch API
+
+---
+
+## 📥 Instalación
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/258sec/TaskList-with-API-258sec.git
+
+Instala dependencias:
+
+npm install
+
+Inicia la aplicación:
+
+npm run dev
+
+Abre el navegador en http://localhost:5173
+
+📁 Estructura del proyecto
+/public
+  └─ background.jpg
+
+/src
+  ├─ App.jsx
+  ├─ TaskList.jsx
+  ├─ api.jsx
+  ├─ main.jsx
+  └─ App.css
+
+package.json
+README.md
+📦 API
+
+La app se comunica con un backend externo para:
+
+Crear usuario
+Obtener tareas
+Añadir nuevas
+Eliminar una tarea
+Limpiar todas las tareas
+🎨 Personalización visual
+
+Se usa Bootstrap y CSS simple para un diseño moderno y responsivo.
+La lista y formularios están centrados y estilizados para una buena experiencia.
+
+📌 Licencia
+
+Proyecto de práctica personal. Puede usarse como referencia o inspiración para proyectos propios.
